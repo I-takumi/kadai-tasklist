@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
   
-  get 'users/controller'
   get 'users/create'
-    root to: 'tasks#index'
+  root to: 'tasks#index'
     
   get 'login', to: 'sessions#new'
   post 'login', to: 'sessions#create'
